@@ -1,0 +1,17 @@
+diff --git a/node_modules/next-assets-manifest/src/index.js b/node_modules/next-assets-manifest/src/index.js
+index 4fff83e..972d4a7 100644
+--- a/node_modules/next-assets-manifest/src/index.js
++++ b/node_modules/next-assets-manifest/src/index.js
+@@ -31,9 +31,9 @@ module.exports = function withAssetsManifest(nextConfig = {}) {
+         opt => new WebpackAssetsManifest({
+           ...opt,
+           // Pass this along so it can be used in customize/transform.
+-          nextOptions: {
+-            ...options,
+-          },
++          // nextOptions: {
++          //   ...options,
++          // },
+         }),
+       );
+ 
